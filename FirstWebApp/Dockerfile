@@ -9,7 +9,7 @@ FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
 COPY ["FirstWebApp/FirstWebApp.csproj", "FirstWebApp/"]
 RUN dotnet restore "FirstWebApp/FirstWebApp.csproj"
-COPY . .
+COPY bin/Release/net7.0/publish .
 WORKDIR "/src/FirstWebApp"
 RUN dotnet build "FirstWebApp.csproj" -c Release -o /app/build
 

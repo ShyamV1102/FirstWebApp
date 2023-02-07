@@ -9,6 +9,7 @@
 **/.vs
 **/.vscode
 **/*.*proj.user
+**/*.*proj
 **/*.dbmdl
 **/*.jfm
 **/azds.yaml
